@@ -1,0 +1,60 @@
+.media-extractor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    background: #1a1a1a;
+    min-height: 100vh;
+}
+
+.media-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background: #2a2a2a;
+    border-radius: 8px;
+}
+
+.media-card img,
+.media-card svg {
+    height: 200px;
+    width: auto;
+    object-fit: contain;
+}
+
+.media-card video,
+.media-card audio {
+    width: 100%;
+}
+
+.media-card button {
+    padding: 8px 16px;
+    background: #4a4a4a;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.media-card button:hover {
+    background: #5a5a5a;
+}
+
+.media-extractor-close {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 8px 16px;
+    background: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.media-extractor-close:hover {
+    background: #ff6666;
+}
